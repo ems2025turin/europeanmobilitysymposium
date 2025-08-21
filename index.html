@@ -1,323 +1,342 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>European Mobility Symposium</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<style type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Mobility Symposium</title>
+    <meta name="description" content="The European Mobility Symposium has the goal of sharing insights from recent works on human mobility and exploring new perspectives and potential collaborations—both in terms of research papers and project proposals.">
 
-/* Apply the animation to the background image */
-/* Apply the animation to the background image */
-#header {
-    position: relative;
-    overflow: hidden;
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-}
-
-#header::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('images/background.webp');
-    background-size: cover;
-    background-position: center;
-    animation: zoom 20s infinite alternate;
-    z-index: -1;
-}
-
-/* Define the animation for infinite zoom in/out effect */
-@keyframes zoom {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Ensure header content is on top */
-.header-content {
-    position: relative;
-    z-index: 2;
-}
-
-/* Style for the white opaque box */
-.header-content .text-content {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    color: black;
-    font-weight: bold;
-}
-
-/* Target images inside links and remove borders and outlines */
-.logo-img {
-    border: none;
-    outline: none;
-    margin-right: 15px;
-}
-
-/* Optional: ensure no effect on hover */
-.logo-img:hover {
-    opacity: 1;
-}
-
-	</style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="is-preload">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#welcome">2nd European Mobility Symposium</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#participants">Participants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#organizers">Organizers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#program">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="mb-5">
+        <img src="assets/images/torino.jpg" class="img-fluid w-100" alt="Conference banner">
+    </header>
+    <!-- Hero Section -->
+    <section id="welcome" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold text-primary mb-3">2nd European Mobility Symposium</h1>
+                    <h2 class="h4 text-secondary mb-4">Turin, 25-26 September, 2025</h2>
+                    <p class="lead">The 2025 European Mobility Symposium will gather top research scientist in the field of urban systems and human mobility with the goal of training the next generation of human mobility and urban modelers. The event will revolve around the writing of the proposal for a MSCA Doctoral Network, setting the basis for a shared scientific vision of the consortium. The first edition of the symposium was held in Pisa in 2024. <a href="https://ems2024pisa.github.io/europeanmobilitysymposium/" target="_blank">Read more here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+    <!-- Event Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">🏢 Venue</h5>
+                            <p class="card-text">ISI Foundation. Via Chisola, 5, 10126 Turin TO.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-calendar fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">📅 Dates</h5>
+                            <p class="card-text">September 25-26, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">📍 Location</h5>
+                            <p class="card-text">Institute for Scientific Interchange, ISI Foundation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<!-- Header -->
-					<header id="header" class="alt">
-						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
-						<div class="header-content">
-							<div class="background-image"></div>
-							<div class="text-content">
-								<h1><b style="color:black; font-family:Georgia">European Mobility Symposium</b></h1>
-								<p>Pisa, 21-22 November, 2024</p>
-							</div>
-						</div>
-					</header>
+    <!-- Location Map -->
+    <section id="location" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">📍 Location</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5592.000896215472!2d7.6662397!3d45.0407905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478812b5679d1425%3A0x14b56e0f778dac51!2sVia%20Chisola%2C%205%2C%2010126%20Torino%20TO!5e0!3m2!1sit!2sit!4vXXXXXXXXXX"
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            <div class="mt-3">
+                                <strong>Institute for Scientific Interchange, ISI Foundation</strong><br>
+                                Via Chisola, 5, 10126 Turin TO, Italy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Home</a></li>
-							<li><a href="#people">Participants</a></li>
-							<li><a href="#organizers">Organizers</a></li>
-							<li><a href="#program">Program</a></li>
-							<li><a href="#sponsor">Sponsors</a></li>
-						</ul>
-					</nav>
+    <!-- Confirmed Participants -->
+    <section id="participants" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Confirmed Participants</h2>
+            <p class="text-center text-muted mb-4">
+                The following is a list of confirmed participants for the event, organized alphabetically by their affiliated institutions.
+            </p>
+            <div class="row">
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">TBA</h5>
+                            <ul class="list-unstyled">
+                                
+                                <li class="mb-1">
+                                    <i class="fas fa-user text-secondary me-2"></i>TBA
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">TBA</h5>
+                            <ul class="list-unstyled">
+                                
+                                <li class="mb-1">
+                                    <i class="fas fa-user text-secondary me-2"></i>TBA
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-					<!-- Main -->
-					<div id="main">
+    <!-- Organizers -->
+    <section id="organizers" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Organizers</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h5 class="fw-bold text-primary">Steering Committee:</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li class="mb-2">
+                                        <i class="fas fa-star text-warning me-2"></i>Jose Ramasco (Institute for Cross-Disciplinary Physics and Complex Systems, Spain)
+                                    </li>
+                                    
+                                    <li class="mb-2">
+                                        <i class="fas fa-star text-warning me-2"></i>Luca Pappalardo (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)
+                                    </li>
+                                    
+                                    <li class="mb-2">
+                                        <i class="fas fa-star text-warning me-2"></i>Riccardo Di Clemente (Northeastern University of London, UK)
+                                    </li>
+                                    
+                                </ul>
+                            </div>
 
-						<!-- Introduction -->
-						<section id="intro" class="main">
-							<div class="spotlight">
-								<div class="content">
-									<header class="major">
-										<h2><b>Welcome</b></h2>
-									</header>
-									<p>The <b>European Mobility Symposium</b> has the goal of sharing insights from recent works on human mobility and exploring new perspectives and potential collaborations—both in terms of research papers and project proposals.</p>
-									<br>
-									<div id="event-info">
-								        <h4><b>🏢 Venue</b></h4>
-								        <p>Officine Garibaldi, second floor, Aula Master. Via Vincenzo Gioberti, 39, 56124 Pisa PI.</p>
-								        
-								        <h4><b>📅 Dates</b></h4>
-								        <p>November 21-22, 2024</p>
-								    </div>
-								    <h4><b>📍 Location</b></h4>
-								    <div id="map" style="width: 100%; height: 300px;">
-								        <iframe
-								            src="https://www.google.com/maps?q=Officine+Garibaldi+Pisa+Italy&output=embed"
-								            width="100%"
-								            height="300"
-								            style="border:0;"
-								            allowfullscreen=""
-								            loading="lazy">
-								        </iframe>
-								    </div>
-								</div>
-							</div>
-						</section>
+                            <div class="mb-4">
+                                <h5 class="fw-bold text-primary">Web Chair:</h5>
+                                <p class="mb-0">
+                                    <i class="fas fa-globe text-info me-2"></i>Antonio Desiderio (ISI Foundation, Turin, Italy)
+                                </p>
+                            </div>
 
+                            <div>
+                                <h5 class="fw-bold text-primary">Local Chair:</h5>
+                                <p class="mb-0">
+                                    <i class="fas fa-map-marker-alt text-success me-2"></i>Mattia Mazzoli (ISI Foundation, Turin, Italy)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Second Section -->
-						<section id="people" class="main">
-							<header class="major">
-								<h2><b>Confirmed Participants</b></h2>
-							</header>
-							The following is a list of confirmed participants for the event, organized alphabetically by their affiliated institutions. <br><br>
+    <!-- Program -->
+    <section id="program" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="mb-4">Program</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-file-pdf fa-4x text-danger mb-3"></i>
+                            <h5>Program PDF</h5>
+                            <p class="text-muted">Download the complete symposium program</p>
+                            <a href="assets/program1.pdf" class="btn btn-primary btn-lg" target="_blank">
+                                <i class="fas fa-download me-2"></i>Download Program
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						    <ul>
-						        <li><strong>Central European University, Austria:</strong>
-						            <ul>
-						                <li>Elisa Omodei</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>Corvinus University, Hungary:</strong>
-						            <ul>
-						                <li>Gergő Pintér</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>Mobile and Social Computing Lab - Fondazione Bruno Kessler, Trento, Italy:</strong>
-						            <ul>
-						                <li>Massimiliano Luca</li>
-						                <li>Sebastiano Bontorin</li>
-						                <li>Bruno Lepri</li>
-						            </ul>
-						        </li>
+    <section id="sponsors" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Sponsors</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+            
+            <div class="col text-center">
+                <a href="https://dutpartnership.eu" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/dut.png" class="img-fluid sponsor-logo"
+                    alt="DUT logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://www.dut-coline.org" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/coline.png" class="img-fluid sponsor-logo"
+                    alt="COLINE logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://www.isi.it" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/isi.png" class="img-fluid sponsor-logo"
+                    alt="ISI logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://riccardodiclemente.com/complex_connections_lab.html" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/ccl.jpeg" class="img-fluid sponsor-logo"
+                    alt="CCL logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://ifisc.uib-csic.es/en/" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/ifisc.png" class="img-fluid sponsor-logo"
+                    alt="IFISC logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://www.networkscienceinstitute.org" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/netsi.png" class="img-fluid sponsor-logo"
+                    alt="NETSI logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://www.nulondon.ac.uk/research/network-science/" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/nul.png" class="img-fluid sponsor-logo"
+                    alt="NUL logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://kdd.isti.cnr.it" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/kdd.jpg" class="img-fluid sponsor-logo"
+                    alt="KDD logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://www.sns.it/" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/sns.png" class="img-fluid sponsor-logo"
+                    alt="SNS logo">
+                </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://www.isti.cnr.it/it/" target="_blank" rel="noopener">
+                <img src="assets/images/sponsors/cnr.png" class="img-fluid sponsor-logo"
+                    alt="CNR logo">
+                </a>
+            </div>
+            
+            
+            </div>
+        </div>
+    </section>
+    <!-- Sponsors -->
 
-						        <li><strong>CHuB - Fondazione Bruno Kessler, Trento, Italy:</strong>
-						            <ul>
-						                <li>Riccardo Gallotti</li>
-						                <li>Andrea Guizzo</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>ISI Foundation, Italy:</strong>
-						            <ul>
-						                <li>Leo Ferres</li>
-						                <li>Mattia Mazzoli</li>
-						                <li>Rossano Schifanella</li>
-						                <li>Kyriaki Kalimeri</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>ISTI-CNR, Pisa, Italy:</strong>
-						            <ul>
-						                <li>Luca Pappalardo (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)</li>
-						                <li>Mirco Nanni</li>
-						                <li>Giuliano Cornacchia</li>
-						                <li>Giovanni Mauro (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)</li>
-						                <li>Paolo De Biase</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>Northeastern University of London, UK:</strong>
-						            <ul>
-						                <li>Riccardo Di Clemente</li>
-						                <li>Nandini Iyer</li>
-						                <li>Gavin Rolls</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>Sony CSL, Italy:</strong>
-						            <ul>
-						                <li>Vittorio Loreto</li>
-						                <li>Hygor Piaget Monteiro Melo</li>
-						                <li>Matteo Bruno</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>Technical University of Denmark, Denmark:</strong>
-						            <ul>
-						                <li>Antonio Desiderio</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>University of Exeter, UK:</strong>
-						            <ul>
-						                <li>Ronaldo Menezes</li>
-						            </ul>
-						        </li>
-						        
-						        <li><strong>Wroclaw University of Environmental and Life Sciences, Poland:</strong>
-						            <ul>
-						                <li>Kamil Smolak</li>
-						            </ul>
-						        </li>
-						    </ul>
-						</section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>2nd European Mobility Symposium</h5>
+                    <p class="text-light">Turin, 25-26 September, 2025</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2025 European Mobility Symposium</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-						<!-- Get Started -->
-						<section id="organizers" class="main">
-							<header class="major">
-								<h2><b>Organizers</b></h2>   
-							</header>
-						    <ul>
-						        <!-- <li><strong>Organizers:</strong> Luca Pappalardo (ISTI-CNR - KDD-Lab, Pisa, Italy), Riccardo Di Clemente (Northeastern University of London, UK)</li>
-						        <li><strong>Steering Committee:</strong> Antonio Desiderio (Technical University of Denmark, Denmark), Laura Alessandretti (Technical University of Denmark, Denmark)</li>-->
-						        <li><strong>Steering Committee:</strong> Luca Pappalardo (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy), Riccardo Di Clemente (Northeastern University of London, UK), Antonio Desiderio (Technical University of Denmark, Denmark)</li>
-						        <li><strong>Web Chair:</strong> Giuliano Cornacchia (ISTI-CNR, Pisa, Italy)</li>
-						        <li><strong>Local Chair:</strong> Giovanni Mauro (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)</li>
-						    </ul>
-						</section>
-						
+    <!-- Bootstrap JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-						<!-- Get Started -->
-						<section id="program" class="main">
-							<header class="major">
-								<h2><b>Program</b></h2>   
-							</header>
-							<iframe src="./documents/program.pdf" width="100%" height="600px" style="border: none;"></iframe>
-						</section>
-						
-
-
-						<section id="sponsor" class="main">
-							<header class="major">
-								<h2><b>Sponsors</b></h2>   
-							</header>
-							<!--<div class="container"-->
-								
-								<!--<a href="https://greendatai.eu/"><img src="images/green_dat_ai_logo.png" /></a>
-								<a href="https://plusplus.sobigdata.eu/"><img src="images/sobigdata_logo.png" style="width: 60%;"/></a> -->
-								<div>
-								<a href="https://www.unipi.it" target="_blank">
-								<img id="img_unipi" src="images/logo_unipi.svg" style="width: 10%; margin-right: 30px;"/>
-								</a>
-								<a href="https://www.cnr.it" target="_blank">
-								<img id="img_cnr" src="images/logo_cnr.png" style="width: 15%;margin-right: 30px;"/>
-								</a>
-								<a href="https://www.sns.it" target="_blank">
-								<img id="img_normale" src="images/logo_normale.png" style="width: 20%;margin-right: 30px;"/>
-								</a>
-								<a href="https://www.nulondon.ac.uk/faculties/network-science-institute-london/" target="_blank">
-								<img id="img_ne" src="images/nulondon.png" style="width: 25%;margin-right: 30px;"/>
-								</div>
-								<br>
-								<div>
-									<img id="kdd" src="images/logo_kdd.png" style="width: 20%; margin-right: 30px;"/>
-									<a href="https://www.networkscienceinstitute.org/" target="_blank">
-									<img id="img_netsi" src="images/Netsi_logo.png" style="width: 40%; margin-right: 30px;"/>
-									</a>
-									<a href="https://riccardodiclemente.com/complex_connections_lab.html" target="_blank">
-									<img id="img_cnr" src="images/logo_complex_connection.jpg" style="width: 15%;margin-right: 30px;"/>
-									</a>
-
-								</div>
-								<br>
-								<div>
-								<img id="img2" src="images/sobigdata_logo.png" style="width: 30%;"/>
-								<img id="img4" src="images/logo_urbaix.png" style="width: 10%;"/>
-								<img id="img5" src="images/fair_banner.png" style="width: 40%;"/>
-								<img id="img6" src="images/green_dat_ai_logo.png" style="width: 10%;margin-right: 30px;"/>
-							</div> 
-						</section>
-
-
-
-					</div>
-
-		
-					<!-- Footer -->
-					<footer id="footer">
-							
-						<p class="copyright">&copy; European Mobility Symposium. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-
-					</footer>
-
-				</div>
-
-				<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/jquery.scrollex.min.js"></script>
-				<script src="assets/js/jquery.scrolly.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-
-			</body>
-			</html>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
