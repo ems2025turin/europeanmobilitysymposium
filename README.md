@@ -1,1 +1,1 @@
-European Mobility Symposium, Pisa 21-22 November, 2024.
+European Mobility Symposium, Turin 25-26 September, 2025.
